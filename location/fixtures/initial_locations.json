@@ -1,0 +1,93 @@
+[
+    {
+        "model": "location.location",
+        "pk": "1",
+        "fields": {
+        "title": "USA",
+        "center": "POINT(-98.5795 39.8283)",
+        "parent_id": null,
+        "location_type": "country",
+        "country_code": "US",
+        "state_abbr": null,
+        "city": null,
+        "created_at": "2024-12-01T12:00:00Z",
+        "updated_at": "2024-12-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "location.location",
+        "pk": "2",
+        "fields": {
+        "title": "California",
+        "center": "POINT(-119.4179 36.7783)",
+        "parent_id": "1",
+        "location_type": "state",
+        "country_code": "US",
+        "state_abbr": "CA",
+        "city": null,
+        "created_at": "2024-12-01T12:01:00Z",
+        "updated_at": "2024-12-01T12:01:00Z"
+        }
+    },
+    {
+        "model": "location.location",
+        "pk": "3",
+        "fields": {
+        "title": "Los Angeles",
+        "center": "POINT(-118.2437 34.0522)",
+        "parent_id": "2",
+        "location_type": "city",
+        "country_code": "US",
+        "state_abbr": "CA",
+        "city": "Los Angeles",
+        "created_at": "2024-12-01T12:02:00Z",
+        "updated_at": "2024-12-01T12:02:00Z"
+        }
+    },
+    {
+        "model": "location.location",
+        "pk": "4",
+        "fields": {
+        "title": "Canada",
+        "center": "POINT(-106.3468 56.1304)",
+        "parent_id": null,
+        "location_type": "country",
+        "country_code": "CA",
+        "state_abbr": null,
+        "city": null,
+        "created_at": "2024-12-01T12:03:00Z",
+        "updated_at": "2024-12-01T12:03:00Z"
+        }
+    },
+    {
+        "model": "location.location",
+        "pk": "5",
+        "fields": {
+        "title": "Ontario",
+        "center": "POINT(-85.3232 51.2538)",
+        "parent_id": "4",
+        "location_type": "province",
+        "country_code": "CA",
+        "state_abbr": "ON",
+        "city": null,
+        "created_at": "2024-12-01T12:04:00Z",
+        "updated_at": "2024-12-01T12:04:00Z"
+        }
+    },
+    {
+        "model": "location.location",
+        "pk": "6",
+        "fields": {
+        "title": "Toronto",
+        "center": "POINT(-79.3832 43.6532)",
+        "parent_id": "5",
+        "location_type": "city",
+        "country_code": "CA",
+        "state_abbr": "ON",
+        "city": "Toronto",
+        "created_at": "2024-12-01T12:05:00Z",
+        "updated_at": "2024-12-01T12:05:00Z"
+        }
+    }
+]
+

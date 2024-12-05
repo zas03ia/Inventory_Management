@@ -1,0 +1,7 @@
+Django>=4.0,<5.0
+psycopg2-binary>=2.9,<3.0
+django-extensions
+djangorestframework
+pillow
+django-import-export
+coverage

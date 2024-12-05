@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>400 - Bad Request</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+        }
+
+        /* Main Heading */
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            color: #ff6f61;
+        }
+
+        /* Subheading */
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #666;
+        }
+
+        /* Button */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Animation */
+        .error-code {
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        li {
+            color: #c22e02;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="error-code">400</h1>
+        <p>Oops! There is some issue with your request.</p>
+        <ul>
+            {% for field, error_list in errors.items %}
+                <li><strong>{{ field }}</strong>: {{ error_list|join:", " }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/sign_up" class="button">Try again</a>
+    </div>
+</body>
+</html>

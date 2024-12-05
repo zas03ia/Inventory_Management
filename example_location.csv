@@ -1,0 +1,4 @@
+id,title,center,parent_id,location_type,country_code,state_abbr,city,created_at,updated_at
+1,USA,POINT(-77.0369 38.9072),,country,US,,Washington,2024-12-03 10:00:00,2024-12-03 10:00:00
+2,California,POINT(-119.4179 36.7783),1,state,US,CA,,2024-12-03 10:00:00,2024-12-03 10:00:00
+3,Los Angeles,POINT(-118.2437 34.0522),2,city,US,CA,Los Angeles,2024-12-03 10:00:00,2024-12-03 10:00:00
