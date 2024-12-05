@@ -48,6 +48,7 @@ The Inventory Management System is a Django-based application designed to stream
 5. Generate sitemap from location data:
   ```docker bash
   python manage.py generate_sitemap
+   ```
 
 6. Access the application at `http://localhost:8000`.
 
